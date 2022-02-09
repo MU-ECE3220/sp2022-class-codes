@@ -13,5 +13,6 @@ class Student {
 		string getName();
 		Student();
 		Student(string name, int age);
-		Student(Student *s);
+		Student(Student &s);
+		// Add Destructor
 };
