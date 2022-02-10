@@ -15,4 +15,5 @@ class Student {
 		Student(string name, int age);
 		Student(Student &s);
 		// Add Destructor
+		~Student();
 };

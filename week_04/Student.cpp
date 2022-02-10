@@ -30,3 +30,6 @@ Student::Student(Student &s) {
 }
 
 // Implement Destructor here
+Student::~Student(){
+	cout << "Student " << _name << " object is destroyed" << endl;
+}
