@@ -11,5 +11,7 @@ class FileIO {
 		bool readFile();
 		bool writeFile(string filename);
 		bool read_add_numbers_from_file(string filename);
-		
+		void setFilename(string filename);
+		string getFilename();
+		FileIO(string filename);
 };
