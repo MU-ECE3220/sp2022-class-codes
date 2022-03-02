@@ -2,14 +2,23 @@
 using namespace std;
 
 // implement division function
-float division(float a, float b) {
-
+int division(int a, int b) {
+	cout << "Division\n";
+	if(b == 0) {
+		throw runtime_error("Division by zero\n");
+	}
+	return a/b;
 }
 
 int main () {
-	float a=5.0, b=2.0;
-	cout << "Before division\n";
+	int a = 5, b = 0;
+	try {
+		cout << "Before division\n";
 	// surround try-catch block
-	division(a, b);
+		division(a, b);
+	} catch(exception &ex){
+		cerr << ex.what();
+	}
+	cout << "After division\n";
 	return EXIT_SUCCESS;
 }

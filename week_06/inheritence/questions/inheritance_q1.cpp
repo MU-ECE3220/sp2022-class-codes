@@ -14,7 +14,7 @@ class B : public A {
         B(){ cout << "Class B's constructor is called" << endl; } 
 }; 
    
-class C: public A, public B { 
+class C: public B, public A { 
     public:
         // Default constructor for Class C 
         C() { cout << "Class C's constructor is called" << endl; }
