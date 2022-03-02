@@ -2,18 +2,14 @@
 #include "ConcreteProductB.hpp"
 #include "ConcreteProductA.hpp"
 
-
-// return ConcreteProductA
 Product* ConcreteCreator::createProductA() {
-
+    return new ConcreteProductA();
 }
- 
-// return ConcreteProductB
+  
 Product* ConcreteCreator::createProductB() {
-
+    return new ConcreteProductB();
 }
-
-// delete product
+  
 void ConcreteCreator::removeProduct(Product *product) {
-
+    delete product;
 }

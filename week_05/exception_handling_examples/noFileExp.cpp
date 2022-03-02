@@ -5,12 +5,7 @@
 using namespace std;
 
 void error_function(const string &x) {
-	ifstream file;
-	file.open(x);
-	cout << "inside error function\n";
-	//if(!file) {
-		//throw runtime_error("Variable x: Could not open file\n");
-	//}
+
 }
 
 void some_other_function(const std::string &y) {
@@ -20,13 +15,9 @@ void some_other_function(const std::string &y) {
 }
 
 int main() {
-	//try{
+	try{
 		some_other_function("numberss.txt");
-	//} // implement the catch block
-	//catch(exception &ex){
-	//	cerr << "Exception info: " << ex.what() << endl;
-	//}
-	cout << "End of program" << endl;
+	} // implement the catch block
 
 	return EXIT_SUCCESS;
 }

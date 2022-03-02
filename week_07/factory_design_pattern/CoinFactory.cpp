@@ -1,7 +1,6 @@
 #include "CoinFactory.hpp"
 #include "GoldCoin.hpp"
 #include "CopperCoin.hpp"
-#include "UndefinedCoinException.hpp"
 
 Coin* CoinFactory::get_coin(enum CoinType::coin_type type) {
     if(type == CoinType::coin_type::GOLD_COIN){
@@ -11,6 +10,6 @@ Coin* CoinFactory::get_coin(enum CoinType::coin_type type) {
         return new CopperCoin();
     }
     else {
-        throw UndefinedCoinException();
+        throw "This is not a valid coin!";
     }
 }

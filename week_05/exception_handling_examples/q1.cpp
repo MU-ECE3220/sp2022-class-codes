@@ -1,15 +1,8 @@
 #include <iostream>
 using namespace std;
 
-void fun() {
+int fun() {
 	// throw two different types "char" and "int"
-	int x = 4;
-	if(x < 0) {
-		throw x;
-	}
-	else if(x == 4) {
-		throw x;
-	}
 }
 
 int main() {
@@ -18,17 +11,6 @@ int main() {
 		fun();
 	}
 	// can have multiple catch blocks?
-	catch(char) {
-		cerr << "Character exception" << endl;
-	}
-	catch(int a) {
-		if(a < 0) {
-			cerr << " 0> exception" << endl;
-		}
-		else if(a == 4) {
-			cerr << "x =4 exception" << endl;
-		}
-	}
 
 	return EXIT_SUCCESS;
 }

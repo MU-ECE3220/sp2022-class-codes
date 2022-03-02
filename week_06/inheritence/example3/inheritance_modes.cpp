@@ -46,8 +46,7 @@ int main() {
 	C c;
 	D d;
 
-	c.print();
-	//d.print();
+	d.print();
 	//cout << d.x << endl;
 	
 	return EXIT_SUCCESS;

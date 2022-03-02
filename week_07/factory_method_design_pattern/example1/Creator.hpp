@@ -8,13 +8,10 @@
  */
 class Creator {
     public:
-        // destructor
-        
-        // function for creating product A of Product type
-        
-        // function for creating product B of Product type
-        
-        // remove product function
-        
+        virtual ~Creator() {}
+        virtual Product* createProductA() = 0;
+        virtual Product* createProductB() = 0;
+        virtual void removeProduct(Product *product) = 0;
+        // ...
 };
 #endif

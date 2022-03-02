@@ -5,10 +5,7 @@ int main() {
 
 	try{
 		// try throwing multiple different types for a single catch block
-		throw 1.2;
-	}
-	catch(...) {
-		cerr << "Exception caught!\n";
+		throw "MIZ!";
 	}
 	// Can I have a single generic catch block for different types?
 	return EXIT_SUCCESS;

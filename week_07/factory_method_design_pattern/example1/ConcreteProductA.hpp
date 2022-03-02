@@ -8,4 +8,5 @@ class ConcreteProductA : public Product {
         ~ConcreteProductA();
         ConcreteProductA();
         std::string getName();
+        // ...
 };
